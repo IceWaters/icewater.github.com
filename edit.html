@@ -19,7 +19,7 @@
             </div>
 
             <div id="content">
-                <form>
+                <form id="newArticle">
                     <div>
                         <input type="TEXT" name="title" style="width:300px"   id="title" placeholder="文章标题" required="required" >
                     </div>
@@ -30,10 +30,20 @@
                     </div>
 
                     <div id="save">
-                        <input type="SUBMIT" value="save">
+                        <input type="button" value="save" onclick="SaveContent();">
                     </div>
                 </form>
+
+        <script language="JavaScript">
+            function SaveContent(){
+                title = document.getElementById("title").value;
+                myContent = document.getElementById("myContent").value;
+                alert(myContent);
+        }
+
+        </script>
             </div>
         </div>
+
     </body>
 </html>
